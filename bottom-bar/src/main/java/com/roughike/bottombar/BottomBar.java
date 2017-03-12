@@ -174,6 +174,10 @@ public class BottomBar extends LinearLayout implements View.OnClickListener, Vie
         return (behaviors | behavior) == behaviors;
     }
 
+    public void addDrawUnderNavBehavior() {
+        this.behaviors |= BEHAVIOR_DRAW_UNDER_NAV;
+    }
+
     private Typeface getTypeFaceFromAsset(String fontPath) {
         if (fontPath != null) {
             return Typeface.createFromAsset(
